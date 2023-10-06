@@ -1,0 +1,155 @@
+body {
+    background-color: #AA6639;
+    color: #291203;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    background-color: #6A3716;
+    box-sizing: border-box;
+    width: 96%;
+    height: 90vh;
+    padding: 10px;
+    border: 2px solid rgb(65, 64, 64);  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.areafundorelogio {   
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: space-between;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #291203;
+    color: #FFBE94;
+    font-size: 29px;
+    border-radius: 15px;
+}
+
+.areafundorelogio:hover {   
+    background-color: #3d1b05;
+}
+
+.bandeirapais {
+    padding: 20px;
+    height: 20px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+img:hover {
+    width: 70px;
+}
+
+.nomepais {
+    padding-left: 20px;
+    font-family: 'Play', sans-serif;
+}
+
+.gmtDiv {
+    align-self: flex-end;
+    padding: 15px;
+    font-size: 30px;    
+    
+}
+.arearelogio {    
+    color: black;
+    font-size: 50px;    
+    width: 480px;
+    height: 120px;
+    display: flex;
+    justify-content: center;    
+}
+
+
+.card {    
+    margin: 10px;
+    width: 70px;
+    height: 100px;
+    background-color: #FFBE94;
+    border: 6px solid rgb(90, 90, 90);
+    display: flex;
+    align-self: center;
+    border-radius: 19px;    
+    justify-content: center;
+}
+
+.card:hover {    
+    background-color: #f5cfb6;
+}
+
+.digito {
+    align-self: center;    
+    font-family: 'Play', sans-serif;
+}
+
+.sep {
+    align-self: center;   
+    color: #FFBE94;
+}
+
+
+.icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding-top: 44px;
+    stroke-width: 0;
+    stroke: green;
+    fill: #FFBE94;
+    fill-rule: true;
+}
+
+
+@media (max-width: 1100px) {
+
+    body {        
+        width: 90%;
+        
+    }
+
+    main {
+        flex-direction: column;
+        flex-wrap:nowrap;        
+        height: auto;
+    }  
+    .arearelogio {    
+        color: black;
+        font-size: 28px;    
+        font-weight: bold;
+        width: 280px;
+        height: 100px;
+        display: flex;
+        justify-content: center;    
+    }
+   
+    .card {    
+        margin: 10px;
+        width: 40px;
+        height: 80px;
+        background-color: #FFBE94;
+        border: 6px solid rgb(90, 90, 90);
+        display: flex;
+        align-self: center;
+        border-radius: 19px;    
+        justify-content: center;
+    }    
+    
+ 
+
+}
+
+

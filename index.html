@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeZone Bouquet</title>
+
+    <link rel="stylesheet" href="relogio.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+
+    <script src="relogio.js"></script>   
+    
+
+
+</head>
+<body>
+    <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <symbol id="iconlua" viewBox="0 0 32 32">
+        <path d="M24.633 22.184c-8.188 0-14.82-6.637-14.82-14.82 0-2.695 0.773-5.188 2.031-7.363-6.824 1.968-11.844 8.187-11.844 15.644 0 9.031 7.32 16.355 16.352 16.355 7.457 0 13.68-5.023 15.648-11.844-2.18 1.254-4.672 2.028-7.367 2.028z"></path>
+        </symbol>
+        <symbol id="icon-clock2" viewBox="0 0 32 32">
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM20.586 23.414l-6.586-6.586v-8.828h4v7.172l5.414 5.414-2.829 2.829z"></path>
+        </symbol>
+        <symbol id="iconsol" viewBox="0 0 32 32">
+            <path d="M16 26c1.105 0 2 0.895 2 2v2c0 1.105-0.895 2-2 2s-2-0.895-2-2v-2c0-1.105 0.895-2 2-2zM16 6c-1.105 0-2-0.895-2-2v-2c0-1.105 0.895-2 2-2s2 0.895 2 2v2c0 1.105-0.895 2-2 2zM30 14c1.105 0 2 0.895 2 2s-0.895 2-2 2h-2c-1.105 0-2-0.895-2-2s0.895-2 2-2h2zM6 16c0 1.105-0.895 2-2 2h-2c-1.105 0-2-0.895-2-2s0.895-2 2-2h2c1.105 0 2 0.895 2 2zM25.899 23.071l1.414 1.414c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0l-1.414-1.414c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0zM6.101 8.929l-1.414-1.414c-0.781-0.781-0.781-2.047 0-2.828s2.047-0.781 2.828 0l1.414 1.414c0.781 0.781 0.781 2.047 0 2.828s-2.047 0.781-2.828 0zM25.899 8.929c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l1.414-1.414c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-1.414 1.414zM6.101 23.071c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-1.414 1.414c-0.781 0.781-2.047 0.781-2.828 0s-0.781-2.047 0-2.828l1.414-1.414z"></path>
+            <path d="M16 8c-4.418 0-8 3.582-8 8s3.582 8 8 8c4.418 0 8-3.582 8-8s-3.582-8-8-8zM16 21c-2.761 0-5-2.239-5-5s2.239-5 5-5 5 2.239 5 5-2.239 5-5 5z"></path>
+        </symbol>        
+        </defs>
+        </svg>
+        
+    <header><h1>Horários pelo mundo (implementação: HTML+CSS+JS com responsividade para destkop e mobile)</h1></header>
+    <main>
+        <div class="areafundorelogio" timeZone="America/Santiago" pais="CHILE">            
+            
+            <div class="bandeirapais"><img src="img/bandeiraChile.jpg" alt="Chile" width="64"></div>
+            <span class="nomepais"></span>
+            <div class="arearelogio">
+                <div class="iconlua"><svg class="icon"><use xlink:href="#iconlua"></use></svg><span class="name"></span></div>
+                <div class="iconsol"><svg class="icon"><use xlink:href="#iconsol"></use></svg></div>
+                <div class="card"><span class="digito hora">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito minuto">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito segundo">00</span></div>
+            </div>
+            <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
+        </div>     
+
+        <div class="areafundorelogio" timeZone="America/Sao_Paulo" pais="BRASIL">            
+            <div class="bandeirapais"><img src="img/bandeiraBrasil.jpg" alt="Brasil" width="64"></div>
+            <span class="nomepais"></span>
+            <div class="arearelogio">
+                <div class="iconlua"><svg class="icon"><use xlink:href="#iconlua"></use></svg><span class="name"></span></div>
+                <div class="iconsol"><svg class="icon"><use xlink:href="#iconsol"></use></svg></div>
+                <div class="card"><span class="digito hora">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito minuto">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito segundo">00</span></div>
+            </div>
+            <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
+        </div>     
+        
+        <div class="areafundorelogio" timeZone="Africa/Johannesburg" pais="AFRICA DO SUL">            
+            <div class="bandeirapais"><img src="img/bandeiraAfricaSul.jpg" alt="Africa do Sul" width="64"></div>
+            <span class="nomepais"></span>
+            <div class="arearelogio">
+                <div class="iconlua"><svg class="icon"><use xlink:href="#iconlua"></use></svg></div>
+                <div class="iconsol"><svg class="icon"><use xlink:href="#iconsol"></use></svg></div>
+                <div class="card"><span class="digito hora">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito minuto">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito segundo">00</span></div>
+            </div>
+            <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
+        </div>
+
+
+
+        <div class="areafundorelogio" timeZone="Europe/Kiev" pais="UCRÂNIA">            
+            <div class="bandeirapais"><img src="img/bandeiraUcrania.jpg" alt="UCRÂNIA" width="64"></div>
+            <span class="nomepais"></span>
+            <div class="arearelogio">
+                <div class="iconlua"><svg class="icon"><use xlink:href="#iconlua"></use></svg></div>
+                <div class="iconsol"><svg class="icon"><use xlink:href="#iconsol"></use></svg></div>
+                <div class="card"><span class="digito hora">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito minuto">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito segundo">00</span></div>
+            </div>
+            <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
+        </div>        
+      
+
+
+        <div class="areafundorelogio" timeZone="America/New_York" pais="NOVA YORK">            
+            <div class="bandeirapais"><img src="img/bandeiraEUA.jpg" alt="Nova York" width="64"></div>
+            <span class="nomepais"></span>
+            <div class="arearelogio">
+                <div class="iconlua"><svg class="icon"><use xlink:href="#iconlua"></use></svg></div>
+                <div class="iconsol"><svg class="icon"><use xlink:href="#iconsol"></use></svg></div>
+                <div class="card"><span class="digito hora">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito minuto">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito segundo">00</span></div>
+            </div>
+            <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
+        </div>        
+      
+        <div class="areafundorelogio" timeZone="America/Argentina/Buenos_Aires" pais="ARGENTINA">            
+            <div class="bandeirapais"><img src="img/bandeiraArg.jpg" alt="Argentina" width="64"></div>
+            <span class="nomepais"></span>
+            <div class="arearelogio">
+                <div class="iconlua"><svg class="icon"><use xlink:href="#iconlua"></use></svg></div>
+                <div class="iconsol"><svg class="icon"><use xlink:href="#iconsol"></use></svg></div>
+                <div class="card"><span class="digito hora">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito minuto">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito segundo">00</span></div>
+            </div>
+            <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
+        </div>        
+                      
+        
+      
+        <div class="areafundorelogio" timeZone="Asia/Tokyo" pais="JAPÃO">            
+            <div class="bandeirapais"><img src="img/bandeiraJapao.jpg" alt="Japão" width="64"></div>
+            <span class="nomepais"></span>
+            <div class="arearelogio">
+                <div class="iconlua"><svg class="icon"><use xlink:href="#iconlua"></use></svg></div>
+                <div class="iconsol"><svg class="icon"><use xlink:href="#iconsol"></use></svg></div>
+                <div class="card"><span class="digito hora">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito minuto">00</span></div>
+                <div class="sep">:</div>
+                <div class="card"><span class="digito segundo">00</span></div>
+            </div>
+            <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
+        </div>        
+                      
+                
+         
+    </main>
+
+
+</body>
+</html>
+
+<script>
+
+
+    const areasRelogios = document.querySelectorAll(".areafundorelogio")
+
+    console.log(areasRelogios)
+    // America/Sao_Paulo
+    // America/Santiago
+    // Africa/Johannesburg
+    
+    Start( areasRelogios )
+</script>
