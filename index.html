@@ -34,7 +34,7 @@
         
     <header><h1>Horários pelo mundo (implementação: HTML+CSS+JS com responsividade para destkop e mobile)</h1></header>
     <main>
-        <div class="areafundorelogio" timeZone="America/Santiago" pais="CHILE">            
+        <div class="areafundorelogio" timeZone="America/Santiago" pais="CHILE/Santiago">            
             
             <div class="bandeirapais"><img src="img/bandeiraChile.jpg" alt="Chile" width="64"></div>
             <span class="nomepais"></span>
@@ -50,7 +50,7 @@
             <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
         </div>     
 
-        <div class="areafundorelogio" timeZone="America/Sao_Paulo" pais="BRASIL">            
+        <div class="areafundorelogio" timeZone="America/Sao_Paulo" pais="BRASIL/Brasilia">            
             <div class="bandeirapais"><img src="img/bandeiraBrasil.jpg" alt="Brasil" width="64"></div>
             <span class="nomepais"></span>
             <div class="arearelogio">
@@ -65,7 +65,7 @@
             <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
         </div>     
         
-        <div class="areafundorelogio" timeZone="Africa/Johannesburg" pais="AFRICA DO SUL">            
+        <div class="areafundorelogio" timeZone="Africa/Johannesburg" pais="AFRICA DO SUL/Johanesburgo">            
             <div class="bandeirapais"><img src="img/bandeiraAfricaSul.jpg" alt="Africa do Sul" width="64"></div>
             <span class="nomepais"></span>
             <div class="arearelogio">
@@ -82,7 +82,7 @@
 
 
 
-        <div class="areafundorelogio" timeZone="Europe/Kiev" pais="UCRÂNIA">            
+        <div class="areafundorelogio" timeZone="Europe/Kiev" pais="UCRÂNIA/Kiev">            
             <div class="bandeirapais"><img src="img/bandeiraUcrania.jpg" alt="UCRÂNIA" width="64"></div>
             <span class="nomepais"></span>
             <div class="arearelogio">
@@ -99,7 +99,7 @@
       
 
 
-        <div class="areafundorelogio" timeZone="America/New_York" pais="NOVA YORK">            
+        <div class="areafundorelogio" timeZone="America/New_York" pais="EUA/Nova York">            
             <div class="bandeirapais"><img src="img/bandeiraEUA.jpg" alt="Nova York" width="64"></div>
             <span class="nomepais"></span>
             <div class="arearelogio">
@@ -114,7 +114,7 @@
             <div class="gmtDiv"><span class="gmtHorasDif">+0</span></div>
         </div>        
       
-        <div class="areafundorelogio" timeZone="America/Argentina/Buenos_Aires" pais="ARGENTINA">            
+        <div class="areafundorelogio" timeZone="America/Argentina/Buenos_Aires" pais="ARGENTINA/Buenos Aires">            
             <div class="bandeirapais"><img src="img/bandeiraArg.jpg" alt="Argentina" width="64"></div>
             <span class="nomepais"></span>
             <div class="arearelogio">
@@ -131,7 +131,7 @@
                       
         
       
-        <div class="areafundorelogio" timeZone="Asia/Tokyo" pais="JAPÃO">            
+        <div class="areafundorelogio" timeZone="Asia/Tokyo" pais="JAPÃO/Tokio">            
             <div class="bandeirapais"><img src="img/bandeiraJapao.jpg" alt="Japão" width="64"></div>
             <span class="nomepais"></span>
             <div class="arearelogio">
@@ -155,14 +155,9 @@
 </html>
 
 <script>
-
-
     const areasRelogios = document.querySelectorAll(".areafundorelogio")
 
     console.log(areasRelogios)
-    // America/Sao_Paulo
-    // America/Santiago
-    // Africa/Johannesburg
     
     Start( areasRelogios )
 </script>
